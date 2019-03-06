@@ -1,0 +1,24 @@
+<!-- <p>
+  courses works!
+</p> -->
+<p>
+  {{ title }}  
+</p>
+<!-- <p>
+  {{"judulnya:" +title}}  
+</p> -->
+<table>
+  <thead>
+    <th>
+      #ID
+    </th>
+    <th>Course name</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Course of Courses">
+      <!-- string interpolation -->
+      <td> {{ Course.id }}</td>
+      <td> {{ Course.name }}</td>
+    </tr>
+  </tbody>
+</table>
